@@ -1,19 +1,31 @@
 {
-  "name": "app",
+  "name": "cinema_search-2022",
+  "author": "Jaguar-JS",
+  "repository": "https://github.com/Jaguar-JS/cinema_search-2022#readme",
   "private": true,
   "license": "MIT",
   "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/Jaguar-JS/cinema_search-2022/issues"
+  },
   "type": "module",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && vite preview",
+    "lint": "npx eslint ./src",
+    "format": "npx eslint ./src --fix"
   },
   "devDependencies": {
     "@rollup/plugin-eslint": "^9.0.1",
     "autoprefixer": "^10.4.13",
     "axios": "^1.2.1",
     "eslint": "^8.29.0",
+    "husky": "^8.0.2",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "sass": "^1.56.2",
