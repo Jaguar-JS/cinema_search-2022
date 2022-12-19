@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "private": true,
+  "license": "MIT",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-eslint": "^9.0.1",
+    "autoprefixer": "^10.4.13",
+    "axios": "^1.2.1",
+    "eslint": "^8.29.0",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "sass": "^1.56.2",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0"
+  }
+}
