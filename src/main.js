@@ -1,10 +1,13 @@
 import './index.scss'
 
+import {apiService} from './utils/apiService'
+import getRefs from "./utils/getRefs";
 
-import Footer from './Footer/Footer'
+import FilmsList from './components/molecules/FilmsList/FilmsList'
+import Footer from './components/organisms/Footer/Footer'
 
 import filmotekaLogo from './assets/icon/filmoteka.svg'
-import {setupCounter} from './counter.js'
+import {setupCounter} from './components/counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -33,4 +36,4 @@ const component = Footer('Another one: ')
 
 document.querySelector('body').appendChild(component)
 
-// FilmsList().then(r => console.log(r))
+FilmsList().then(r => console.log(r))
